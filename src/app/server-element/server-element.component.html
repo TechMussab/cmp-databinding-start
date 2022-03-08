@@ -3,8 +3,8 @@
   <div class="card-header">{{ element.name }}</div>
   <div class="card-body">
     <p>
-      <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
-      <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
+      <strong *ngIf="element.type === 'server'" class="text-danger">{{ element.content }}</strong>
+      <em *ngIf="element.type === 'blueprint'" class="text-primary">{{ element.content }}</em>
     </p>
   </div>
 </div>
